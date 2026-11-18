@@ -1,0 +1,34 @@
+<!doctype html><html><head><style>body{margin:0;background:#d9d9dc}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script></head>
+<body><script type="module">
+import * as THREE from 'three';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+const P = new URLSearchParams(location.search);
+const W = +P.get('w')||700, H = +P.get('h')||1000;
+const r = new THREE.WebGLRenderer({antialias:true, preserveDrawingBuffer:true});
+r.setSize(W,H); r.setClearColor(0xd9d9dc); document.body.appendChild(r.domElement);
+const scene = new THREE.Scene();
+scene.add(new THREE.HemisphereLight(0xffffff, 0x666670, 1.4));
+const d1 = new THREE.DirectionalLight(0xffffff, 1.9); scene.add(d1);
+const d2 = new THREE.DirectionalLight(0xffffff, 0.6); scene.add(d2);
+new GLTFLoader().load(P.get('f'), g => {
+  const root = g.scene;
+  // GLB do trimesh e Y-up: os dados sao Z-up em mm -> girar
+  root.rotation.x = -Math.PI/2; scene.add(root);
+  root.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(root);
+  const c = box.getCenter(new THREE.Vector3());
+  const az = (+P.get('az')||0)*Math.PI/180, el=(+P.get('el')||0)*Math.PI/180;
+  const zoom = +P.get('zoom')||1, ty = +(P.get('ty')||0);
+  // camera: az=0 olha de frente (de -Y do modelo = +Z da cena)
+  const dir = new THREE.Vector3(Math.sin(az)*Math.cos(el), Math.sin(el), Math.cos(az)*Math.cos(el));
+  const halfH = 105/zoom, halfW = halfH*W/H;
+  const cam = new THREE.OrthographicCamera(-halfW, halfW, halfH, -halfH, 1, 2000);
+  const tgt = new THREE.Vector3(c.x + (+(P.get('tx')||0)), c.y + ty, c.z);
+  cam.position.copy(tgt).addScaledVector(dir, 600); cam.lookAt(tgt);
+  d1.position.copy(cam.position).add(new THREE.Vector3(-200, 300, 100));
+  d2.position.copy(cam.position).add(new THREE.Vector3(300, -50, -200));
+  r.render(scene, cam);
+  document.title = 'done';
+});
+</script></body></html>

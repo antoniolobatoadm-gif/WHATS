@@ -1,0 +1,710 @@
+{
+ "materiais": [
+  [
+   1,
+   "1 - PLA Verde Medio Masterprint (KRYOU ID 31)",
+   "#2DA84A"
+  ],
+  [
+   2,
+   "2 - PLA Preto Matte Black Soleyin (KRYOU ID 42)",
+   "#1C1C1C"
+  ],
+  [
+   3,
+   "3 - PLA Branco GTMax3D (KRYOU ID 02)",
+   "#F4F4F2"
+  ],
+  [
+   4,
+   "4 - PLA Nude GTMax3D (KRYOU ID 01)",
+   "#E9B994"
+  ]
+ ],
+ "objetos_montagem": [
+  [
+   "KRYOU_Cipeiro_do_Mes",
+   32
+  ]
+ ],
+ "itens_build": 1,
+ "partes": 32,
+ "bbox_min": [
+  -63.196,
+  -35.286,
+  0.0
+ ],
+ "bbox_max": [
+  53.325,
+  35.286,
+  200.0
+ ],
+ "dimensoes_XYZ_mm": [
+  116.52,
+  70.57,
+  200.0
+ ],
+ "area_apoio_z0_mm2": 7321.7,
+ "integridade": [
+  {
+   "parte": "Brilho_Olhos",
+   "material": 3,
+   "tris": 1408,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 10.07,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Pupilas",
+   "material": 2,
+   "tris": 6702,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 67.5,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 200,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Armacao_Oculos",
+   "material": 2,
+   "tris": 28984,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 913.45,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 10,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Olhos_Brancos",
+   "material": 3,
+   "tris": 14706,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 171.69,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 28,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Sobrancelhas",
+   "material": 2,
+   "tris": 8938,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 59.51,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 79,
+   "componentes": 4,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Dentes",
+   "material": 3,
+   "tris": 4246,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 125.62,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Boca_Interior",
+   "material": 2,
+   "tris": 18030,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 156.01,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 22,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Capacete_Cruz",
+   "material": 3,
+   "tris": 3128,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 53.85,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Capacete_Circulo",
+   "material": 1,
+   "tris": 15174,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 112.64,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 125,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Texto_CIPAA_Capacete",
+   "material": 1,
+   "tris": 12930,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 57.81,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 2,
+   "componentes": 5,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Capacete",
+   "material": 3,
+   "tris": 86370,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 19857.9,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 274,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Suportes_Abafadores",
+   "material": 2,
+   "tris": 18368,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 457.59,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 198,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Conchas_Abafadores",
+   "material": 1,
+   "tris": 41824,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 3854.55,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 184,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Almofadas_Abafadores",
+   "material": 2,
+   "tris": 44184,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 1159.82,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 225,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Cabelo",
+   "material": 2,
+   "tris": 67978,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 9778.57,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 204,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Pele_Rosto",
+   "material": 4,
+   "tris": 212592,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 11730.07,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 808,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Peito_Cruz",
+   "material": 1,
+   "tris": 2874,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 32.73,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 6,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Peito_Circulo",
+   "material": 3,
+   "tris": 8878,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 50.04,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 44,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Texto_CIPAA_Peito",
+   "material": 3,
+   "tris": 13062,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 52.93,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 2,
+   "componentes": 5,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Pele_Bracos_Maos",
+   "material": 4,
+   "tris": 57392,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 7288.1,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Fivela",
+   "material": 3,
+   "tris": 3414,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 134.86,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Cinto",
+   "material": 2,
+   "tris": 35726,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 1493.01,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 61,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Camisa",
+   "material": 1,
+   "tris": 254840,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 26154.2,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 2175,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Capa",
+   "material": 1,
+   "tris": 64774,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 16444.38,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 138,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Faixas_Calca",
+   "material": 3,
+   "tris": 14282,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 890.05,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 8,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Calca",
+   "material": 2,
+   "tris": 164360,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 34308.43,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 693,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Botas",
+   "material": 2,
+   "tris": 80424,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 17870.9,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 28,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Base_Cruz",
+   "material": 3,
+   "tris": 3504,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 162.76,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Emblema_Base_Circulo",
+   "material": 1,
+   "tris": 22172,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 541.8,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 256,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Letreiro_CIPEIRO",
+   "material": 3,
+   "tris": 28802,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 491.02,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 7,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Letreiro_DO_MES",
+   "material": 1,
+   "tris": 26178,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 381.35,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
+   "componentes": 8,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "Base",
+   "material": 2,
+   "tris": 118104,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 221114.08,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 1158,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  }
+ ],
+ "sobreposicoes_mm3": [
+  [
+   "Cabelo",
+   "Pele_Rosto",
+   0.0033
+  ],
+  [
+   "Letreiro_CIPEIRO",
+   "Base",
+   0.003
+  ],
+  [
+   "Pele_Bracos_Maos",
+   "Camisa",
+   0.0028
+  ],
+  [
+   "Letreiro_DO_MES",
+   "Base",
+   0.0023
+  ],
+  [
+   "Cinto",
+   "Calca",
+   0.0022
+  ],
+  [
+   "Faixas_Calca",
+   "Calca",
+   0.0021
+  ],
+  [
+   "Pele_Rosto",
+   "Camisa",
+   0.002
+  ],
+  [
+   "Armacao_Oculos",
+   "Cabelo",
+   0.0011
+  ],
+  [
+   "Armacao_Oculos",
+   "Pele_Rosto",
+   0.001
+  ],
+  [
+   "Emblema_Base_Circulo",
+   "Base",
+   0.0009
+  ],
+  [
+   "Emblema_Base_Cruz",
+   "Emblema_Base_Circulo",
+   0.0008
+  ],
+  [
+   "Boca_Interior",
+   "Pele_Rosto",
+   0.0007
+  ],
+  [
+   "Emblema_Capacete_Circulo",
+   "Capacete",
+   0.0007
+  ],
+  [
+   "Olhos_Brancos",
+   "Pele_Rosto",
+   0.0006
+  ],
+  [
+   "Cinto",
+   "Camisa",
+   0.0006
+  ],
+  [
+   "Camisa",
+   "Calca",
+   0.0005
+  ],
+  [
+   "Camisa",
+   "Capa",
+   0.0004
+  ],
+  [
+   "Botas",
+   "Base",
+   0.0004
+  ],
+  [
+   "Dentes",
+   "Boca_Interior",
+   0.0003
+  ],
+  [
+   "Texto_CIPAA_Capacete",
+   "Capacete",
+   0.0003
+  ],
+  [
+   "Capacete",
+   "Suportes_Abafadores",
+   0.0003
+  ],
+  [
+   "Suportes_Abafadores",
+   "Conchas_Abafadores",
+   0.0003
+  ],
+  [
+   "Conchas_Abafadores",
+   "Almofadas_Abafadores",
+   0.0003
+  ],
+  [
+   "Emblema_Peito_Circulo",
+   "Camisa",
+   0.0003
+  ],
+  [
+   "Texto_CIPAA_Peito",
+   "Camisa",
+   0.0003
+  ],
+  [
+   "Pupilas",
+   "Olhos_Brancos",
+   0.0002
+  ],
+  [
+   "Emblema_Capacete_Cruz",
+   "Emblema_Capacete_Circulo",
+   0.0002
+  ],
+  [
+   "Capacete",
+   "Conchas_Abafadores",
+   0.0002
+  ],
+  [
+   "Capacete",
+   "Cabelo",
+   0.0002
+  ],
+  [
+   "Capacete",
+   "Pele_Rosto",
+   0.0002
+  ],
+  [
+   "Fivela",
+   "Cinto",
+   0.0002
+  ],
+  [
+   "Armacao_Oculos",
+   "Almofadas_Abafadores",
+   0.0001
+  ],
+  [
+   "Sobrancelhas",
+   "Pele_Rosto",
+   0.0001
+  ],
+  [
+   "Dentes",
+   "Pele_Rosto",
+   0.0001
+  ],
+  [
+   "Almofadas_Abafadores",
+   "Cabelo",
+   0.0001
+  ],
+  [
+   "Pele_Bracos_Maos",
+   "Capa",
+   0.0001
+  ]
+ ],
+ "sobreposicao_total_mm3": 0.029,
+ "volume_total_mm3": 375977.3,
+ "componentes_total": 65,
+ "componentes_desconectados_da_base": [],
+ "menor_area_contato_por_componente_mm2": [
+  [
+   "Texto_CIPAA_Peito#1",
+   11.11
+  ],
+  [
+   "Letreiro_DO_MES#5",
+   12.15
+  ],
+  [
+   "Texto_CIPAA_Capacete#1",
+   13.12
+  ],
+  [
+   "Letreiro_DO_MES#0",
+   19.3
+  ],
+  [
+   "Texto_CIPAA_Peito#2",
+   19.63
+  ],
+  [
+   "Texto_CIPAA_Peito#0",
+   19.96
+  ],
+  [
+   "Sobrancelhas#0",
+   24.31
+  ],
+  [
+   "Texto_CIPAA_Peito#3",
+   24.39
+  ]
+ ],
+ "traco_CIPEIRO_mm(p5,mediana)": [
+  2.27,
+  2.55
+ ],
+ "contraforma_CIPEIRO_mm(p5,min)": [
+  1.47,
+  1.36
+ ],
+ "caixa_CIPEIRO_mm": [
+  -16.96,
+  35.14,
+  17.13,
+  27.94
+ ],
+ "traco_DO_MES_mm(p5,mediana)": [
+  1.25,
+  2.11
+ ],
+ "contraforma_DO_MES_mm(p5,min)": [
+  1.29,
+  1.09
+ ],
+ "caixa_DO_MES_mm": [
+  -10.96,
+  33.08,
+  4.13,
+  15.46
+ ],
+ "traco_CIPAA_capacete_mm(p5,mediana)": [
+  0.61,
+  0.87
+ ],
+ "contraforma_CIPAA_capacete_mm(p5,min)": [
+  0.49,
+  0.44
+ ],
+ "caixa_CIPAA_capacete_mm": [
+  -11.82,
+  6.23,
+  183.01,
+  188.04
+ ],
+ "traco_CIPAA_peito_mm(p5,mediana)": [
+  0.56,
+  0.76
+ ],
+ "contraforma_CIPAA_peito_mm(p5,min)": [
+  0.49,
+  0.43
+ ],
+ "caixa_CIPAA_peito_mm": [
+  1.4,
+  15.34,
+  121.37,
+  126.21
+ ]
+}
