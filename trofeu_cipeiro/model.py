@@ -627,7 +627,7 @@ PARTS = [
     ("CAPACETE_LOGO_VERDE", GREEN, emb_cap_circ, 0.12),
     ("CAPACETE_TEXTO_CIPAA", GREEN, txt_cap, 0.08),
     ("CAPACETE_BRANCO", WHITE, capacete, 0.2),
-    ("PROTETORES_HASTES_PRETAS", BLACK, suportes, 0.15),
+    ("PROTETORES_HASTES_PRETAS", BLACK, suportes, 0.13),
     ("PROTETORES_VERDES", GREEN, conchas, 0.18),
     ("PROTETORES_ESTRUTURA_PRETA", BLACK, almofadas, 0.15),
     ("CABELO_PRETO", BLACK, cabelo, 0.18),

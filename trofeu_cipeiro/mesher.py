@@ -41,7 +41,17 @@ def coarse_bbox(fn, step=0.8, thr=1.6, pad=1.5):
     return out_lo - pad, out_hi + pad
 
 
-def build(res_scale=1.0, verbose=True):
+def repair(tm):
+    """Fecha furos residuais do marching cubes (empate do campo exatamente sobre um plano da grade)."""
+    tm.merge_vertices()
+    trimesh.repair.fill_holes(tm)
+    trimesh.repair.fix_normals(tm)
+    if not tm.is_watertight:
+        raise RuntimeError("malha nao estanque apos reparo")
+    return tm
+
+
+def build(res_scale=1.0, verbose=True, only=None):
     parts = model.PARTS
     boxes = []
     t0 = time.time()
@@ -51,6 +61,9 @@ def build(res_scale=1.0, verbose=True):
         print(f"bboxes: {time.time()-t0:.1f}s", flush=True)
     meshes = []
     for k, (name, mat, fn, h) in enumerate(parts):
+        if only is not None and name not in only:
+            meshes.append(None)
+            continue
         t1 = time.time()
         h = h * res_scale
         lo, hi = boxes[k]
@@ -93,6 +106,8 @@ def build(res_scale=1.0, verbose=True):
         comps = tm.split(only_watertight=False)
         keep = [c for c in comps if abs(c.volume) > 1.0]
         tm = trimesh.util.concatenate(keep) if len(keep) > 1 else keep[0]
+        if not tm.is_watertight:
+            tm = repair(tm)
         if tm.volume < 0:
             tm.invert()
         meshes.append(tm)

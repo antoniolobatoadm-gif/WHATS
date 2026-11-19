@@ -67,6 +67,8 @@ def resolve_overlaps(parts):
             comps = [c for c in mk.decompose() if c.volume() > 0.05]
             mk = mf.Manifold.compose(comps)
             mans[k] = mk
+        # remove faces de area nula (lascas colineares deixadas pela booleana); desvio <= 0,0001 mm
+        mans[k] = mans[k].simplify(1e-4)
         me = mans[k].to_mesh()
         parts[k][2] = me.vert_properties[:, :3].astype(np.float64)
         parts[k][3] = me.tri_verts.astype(np.int64)

@@ -2,658 +2,685 @@
  "materiais": [
   [
    1,
-   "1 - PLA Verde Medio Masterprint (KRYOU ID 31)",
-   "#2DA84A"
+   "1 - T0 Verde - PLA Verde Medio Masterprint (KRYOU ID 31)",
+   "#22B33A"
   ],
   [
    2,
-   "2 - PLA Preto Matte Black Soleyin (KRYOU ID 42)",
-   "#1C1C1C"
-  ],
-  [
-   3,
-   "3 - PLA Branco GTMax3D (KRYOU ID 02)",
+   "2 - T1 Branco - PLA Branco GTMax3D (KRYOU ID 02)",
    "#F4F4F2"
   ],
   [
+   3,
+   "3 - T2 Preto - PLA Preto Matte Black Soleyin (KRYOU ID 42)",
+   "#1C1C1C"
+  ],
+  [
    4,
-   "4 - PLA Nude GTMax3D (KRYOU ID 01)",
-   "#E9B994"
+   "4 - T3 Pele - PLA Nude GTMax3D (KRYOU ID 01)",
+   "#F0B489"
   ]
  ],
  "objetos_montagem": [
   [
-   "KRYOU_Cipeiro_do_Mes",
-   32
+   "PERSONAGEM_CIPEIRO",
+   33
   ]
  ],
  "itens_build": 1,
- "partes": 32,
+ "partes": 33,
  "bbox_min": [
-  -63.196,
-  -35.286,
+  -61.978,
+  -32.49,
   0.0
  ],
  "bbox_max": [
-  53.325,
-  35.286,
+  52.616,
+  36.431,
   200.0
  ],
  "dimensoes_XYZ_mm": [
-  116.52,
-  70.57,
+  114.59,
+  68.92,
   200.0
  ],
- "area_apoio_z0_mm2": 7321.7,
+ "area_apoio_z0_mm2": 6643.0,
  "integridade": [
   {
-   "parte": "Brilho_Olhos",
-   "material": 3,
-   "tris": 1408,
+   "parte": "OLHOS_BRILHO_BRANCO",
+   "material": 2,
+   "tris": 1454,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 10.07,
+   "volume": 8.09,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Pupilas",
-   "material": 2,
-   "tris": 6702,
+   "parte": "PUPILAS_PRETAS",
+   "material": 3,
+   "tris": 7372,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 67.5,
+   "volume": 74.82,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 200,
+   "faces_degeneradas": 238,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Armacao_Oculos",
-   "material": 2,
-   "tris": 28984,
+   "parte": "OCULOS_PRETOS",
+   "material": 3,
+   "tris": 26084,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 913.45,
+   "volume": 989.67,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 10,
+   "faces_degeneradas": 4,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Olhos_Brancos",
-   "material": 3,
-   "tris": 14706,
+   "parte": "OLHOS_BRANCOS",
+   "material": 2,
+   "tris": 15596,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 171.69,
+   "volume": 108.42,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 28,
+   "faces_degeneradas": 81,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Sobrancelhas",
-   "material": 2,
-   "tris": 8938,
+   "parte": "SOBRANCELHAS_PRETAS",
+   "material": 3,
+   "tris": 6110,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 59.51,
+   "volume": 118.7,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 79,
-   "componentes": 4,
+   "faces_degeneradas": 2,
+   "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Dentes",
-   "material": 3,
-   "tris": 4246,
+   "parte": "DENTES_BRANCOS",
+   "material": 2,
+   "tris": 5770,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 125.62,
+   "volume": 205.23,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Boca_Interior",
-   "material": 2,
-   "tris": 18030,
+   "parte": "BOCA_PRETA",
+   "material": 3,
+   "tris": 15984,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 156.01,
+   "volume": 64.7,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 22,
+   "faces_degeneradas": 101,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Emblema_Capacete_Cruz",
-   "material": 3,
-   "tris": 3128,
+   "parte": "CAPACETE_CRUZ_BRANCA",
+   "material": 2,
+   "tris": 3388,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 53.85,
+   "volume": 65.68,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Emblema_Capacete_Circulo",
+   "parte": "CAPACETE_LOGO_VERDE",
    "material": 1,
-   "tris": 15174,
+   "tris": 16690,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 112.64,
+   "volume": 134.18,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 125,
+   "faces_degeneradas": 69,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Texto_CIPAA_Capacete",
+   "parte": "CAPACETE_TEXTO_CIPAA",
    "material": 1,
-   "tris": 12930,
+   "tris": 10878,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 57.81,
+   "volume": 46.09,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 2,
    "componentes": 5,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Capacete",
-   "material": 3,
-   "tris": 86370,
+   "parte": "CAPACETE_BRANCO",
+   "material": 2,
+   "tris": 91270,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 19857.9,
+   "volume": 22589.05,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 274,
+   "faces_degeneradas": 333,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Suportes_Abafadores",
-   "material": 2,
-   "tris": 18368,
+   "parte": "PROTETORES_HASTES_PRETAS",
+   "material": 3,
+   "tris": 19066,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 457.59,
+   "volume": 450.58,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 198,
+   "faces_degeneradas": 65,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Conchas_Abafadores",
+   "parte": "PROTETORES_VERDES",
    "material": 1,
-   "tris": 41824,
+   "tris": 37904,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 3854.55,
+   "volume": 5107.97,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 106,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "PROTETORES_ESTRUTURA_PRETA",
+   "material": 3,
+   "tris": 71254,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 1815.79,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 184,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Almofadas_Abafadores",
-   "material": 2,
-   "tris": 44184,
+   "parte": "CABELO_PRETO",
+   "material": 3,
+   "tris": 55528,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 1159.82,
+   "volume": 9669.61,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 225,
-   "componentes": 2,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Cabelo",
-   "material": 2,
-   "tris": 67978,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 9778.57,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 204,
+   "faces_degeneradas": 261,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Pele_Rosto",
+   "parte": "ROSTO_PELE",
    "material": 4,
-   "tris": 212592,
+   "tris": 237974,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 11730.07,
+   "volume": 13282.23,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 808,
+   "faces_degeneradas": 851,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Emblema_Peito_Cruz",
+   "parte": "CAMISA_LOGO_CRUZ_VERDE",
    "material": 1,
-   "tris": 2874,
+   "tris": 2866,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 32.73,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 6,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Emblema_Peito_Circulo",
-   "material": 3,
-   "tris": 8878,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 50.04,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 44,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Texto_CIPAA_Peito",
-   "material": 3,
-   "tris": 13062,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 52.93,
+   "volume": 32.57,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 2,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "CAMISA_LOGO_BRANCA",
+   "material": 2,
+   "tris": 9044,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 49.93,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 35,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "CAMISA_TEXTO_CIPAA_BRANCO",
+   "material": 2,
+   "tris": 12256,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 55.57,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
    "componentes": 5,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Pele_Bracos_Maos",
+   "parte": "BRACOS_MAOS_PELE",
    "material": 4,
-   "tris": 57392,
+   "tris": 61990,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 7288.1,
+   "volume": 9041.96,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Fivela",
-   "material": 3,
-   "tris": 3414,
+   "parte": "FIVELA_BRANCA",
+   "material": 2,
+   "tris": 3090,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 134.86,
+   "volume": 134.93,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Cinto",
-   "material": 2,
-   "tris": 35726,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 1493.01,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 61,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Camisa",
-   "material": 1,
-   "tris": 254840,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 26154.2,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 2175,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Capa",
-   "material": 1,
-   "tris": 64774,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 16444.38,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 138,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Faixas_Calca",
+   "parte": "CINTO_PRETO",
    "material": 3,
-   "tris": 14282,
+   "tris": 34712,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 890.05,
+   "volume": 1472.44,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 8,
+   "faces_degeneradas": 79,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "CAMISA_VERDE",
+   "material": 1,
+   "tris": 269302,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 28883.8,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 2366,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "CAPA_VERDE",
+   "material": 1,
+   "tris": 75738,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 20607.39,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 104,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "FAIXAS_BRANCAS",
+   "material": 2,
+   "tris": 14858,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 1264.07,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 0,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Calca",
-   "material": 2,
-   "tris": 164360,
+   "parte": "BOLSOS_PRETOS",
+   "material": 3,
+   "tris": 4936,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 34308.43,
+   "volume": 1292.11,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 693,
-   "componentes": 1,
-   "manifold_ok": "NoError"
-  },
-  {
-   "parte": "Botas",
-   "material": 2,
-   "tris": 80424,
-   "fechada": true,
-   "normais_coerentes": true,
-   "volume": 17870.9,
-   "arestas_nao_manifold": 0,
-   "faces_degeneradas": 28,
+   "faces_degeneradas": 2,
    "componentes": 2,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Emblema_Base_Cruz",
+   "parte": "CALCA_PRETA",
    "material": 3,
-   "tris": 3504,
+   "tris": 184088,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 162.76,
+   "volume": 35746.36,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 793,
+   "componentes": 1,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "BOTAS_PRETAS",
+   "material": 3,
+   "tris": 140654,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 21135.76,
+   "arestas_nao_manifold": 0,
+   "faces_degeneradas": 559,
+   "componentes": 2,
+   "manifold_ok": "NoError"
+  },
+  {
+   "parte": "BASE_CRUZ_BRANCA",
+   "material": 2,
+   "tris": 3260,
+   "fechada": true,
+   "normais_coerentes": true,
+   "volume": 160.76,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Emblema_Base_Circulo",
+   "parte": "BASE_LOGO_VERDE",
    "material": 1,
-   "tris": 22172,
+   "tris": 21800,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 541.8,
+   "volume": 535.13,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 256,
+   "faces_degeneradas": 174,
    "componentes": 1,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Letreiro_CIPEIRO",
-   "material": 3,
-   "tris": 28802,
+   "parte": "BASE_TEXTO_CIPEIRO_BRANCO",
+   "material": 2,
+   "tris": 28182,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 491.02,
+   "volume": 484.72,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 7,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Letreiro_DO_MES",
+   "parte": "BASE_TEXTO_DO_MES_VERDE",
    "material": 1,
-   "tris": 26178,
+   "tris": 25198,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 381.35,
+   "volume": 376.39,
    "arestas_nao_manifold": 0,
    "faces_degeneradas": 0,
    "componentes": 8,
    "manifold_ok": "NoError"
   },
   {
-   "parte": "Base",
-   "material": 2,
-   "tris": 118104,
+   "parte": "BASE_PRETA",
+   "material": 3,
+   "tris": 93072,
    "fechada": true,
    "normais_coerentes": true,
-   "volume": 221114.08,
+   "volume": 194795.43,
    "arestas_nao_manifold": 0,
-   "faces_degeneradas": 1158,
+   "faces_degeneradas": 1101,
    "componentes": 1,
    "manifold_ok": "NoError"
   }
  ],
  "sobreposicoes_mm3": [
   [
-   "Cabelo",
-   "Pele_Rosto",
-   0.0033
+   "CAPACETE_BRANCO",
+   "CABELO_PRETO",
+   0.0116
   ],
   [
-   "Letreiro_CIPEIRO",
-   "Base",
-   0.003
+   "BASE_LOGO_VERDE",
+   "BASE_PRETA",
+   0.0052
   ],
   [
-   "Pele_Bracos_Maos",
-   "Camisa",
-   0.0028
+   "FAIXAS_BRANCAS",
+   "CALCA_PRETA",
+   0.0036
   ],
   [
-   "Letreiro_DO_MES",
-   "Base",
-   0.0023
+   "CABELO_PRETO",
+   "ROSTO_PELE",
+   0.0034
   ],
   [
-   "Cinto",
-   "Calca",
-   0.0022
+   "BASE_TEXTO_CIPEIRO_BRANCO",
+   "BASE_PRETA",
+   0.0029
   ],
   [
-   "Faixas_Calca",
-   "Calca",
+   "ROSTO_PELE",
+   "CAMISA_VERDE",
    0.0021
   ],
   [
-   "Pele_Rosto",
-   "Camisa",
-   0.002
+   "CINTO_PRETO",
+   "CALCA_PRETA",
+   0.0021
   ],
   [
-   "Armacao_Oculos",
-   "Cabelo",
+   "BASE_TEXTO_DO_MES_VERDE",
+   "BASE_PRETA",
+   0.0019
+  ],
+  [
+   "BRACOS_MAOS_PELE",
+   "CAMISA_VERDE",
+   0.0017
+  ],
+  [
+   "BOLSOS_PRETOS",
+   "CALCA_PRETA",
+   0.0015
+  ],
+  [
+   "OCULOS_PRETOS",
+   "CABELO_PRETO",
    0.0011
   ],
   [
-   "Armacao_Oculos",
-   "Pele_Rosto",
-   0.001
+   "OCULOS_PRETOS",
+   "ROSTO_PELE",
+   0.0011
   ],
   [
-   "Emblema_Base_Circulo",
-   "Base",
-   0.0009
-  ],
-  [
-   "Emblema_Base_Cruz",
-   "Emblema_Base_Circulo",
-   0.0008
-  ],
-  [
-   "Boca_Interior",
-   "Pele_Rosto",
+   "CAPACETE_LOGO_VERDE",
+   "CAPACETE_BRANCO",
    0.0007
   ],
   [
-   "Emblema_Capacete_Circulo",
-   "Capacete",
+   "CINTO_PRETO",
+   "CAMISA_VERDE",
    0.0007
   ],
   [
-   "Olhos_Brancos",
-   "Pele_Rosto",
+   "PROTETORES_VERDES",
+   "PROTETORES_ESTRUTURA_PRETA",
    0.0006
   ],
   [
-   "Cinto",
-   "Camisa",
+   "CALCA_PRETA",
+   "BOTAS_PRETAS",
    0.0006
   ],
   [
-   "Camisa",
-   "Calca",
+   "BASE_CRUZ_BRANCA",
+   "BASE_LOGO_VERDE",
    0.0005
   ],
   [
-   "Camisa",
-   "Capa",
+   "OCULOS_PRETOS",
+   "PROTETORES_ESTRUTURA_PRETA",
    0.0004
   ],
   [
-   "Botas",
-   "Base",
+   "OLHOS_BRANCOS",
+   "ROSTO_PELE",
    0.0004
   ],
   [
-   "Dentes",
-   "Boca_Interior",
+   "SOBRANCELHAS_PRETAS",
+   "ROSTO_PELE",
+   0.0004
+  ],
+  [
+   "BOCA_PRETA",
+   "ROSTO_PELE",
+   0.0004
+  ],
+  [
+   "CAPACETE_BRANCO",
+   "PROTETORES_HASTES_PRETAS",
+   0.0004
+  ],
+  [
+   "CAMISA_VERDE",
+   "CAPA_VERDE",
+   0.0004
+  ],
+  [
+   "CAMISA_VERDE",
+   "CALCA_PRETA",
+   0.0004
+  ],
+  [
+   "DENTES_BRANCOS",
+   "BOCA_PRETA",
    0.0003
   ],
   [
-   "Texto_CIPAA_Capacete",
-   "Capacete",
+   "DENTES_BRANCOS",
+   "ROSTO_PELE",
    0.0003
   ],
   [
-   "Capacete",
-   "Suportes_Abafadores",
+   "CAPACETE_CRUZ_BRANCA",
+   "CAPACETE_LOGO_VERDE",
    0.0003
   ],
   [
-   "Suportes_Abafadores",
-   "Conchas_Abafadores",
+   "CAPACETE_TEXTO_CIPAA",
+   "CAPACETE_BRANCO",
    0.0003
   ],
   [
-   "Conchas_Abafadores",
-   "Almofadas_Abafadores",
+   "CAPACETE_BRANCO",
+   "ROSTO_PELE",
    0.0003
   ],
   [
-   "Emblema_Peito_Circulo",
-   "Camisa",
+   "PROTETORES_HASTES_PRETAS",
+   "PROTETORES_VERDES",
    0.0003
   ],
   [
-   "Texto_CIPAA_Peito",
-   "Camisa",
+   "CAMISA_TEXTO_CIPAA_BRANCO",
+   "CAMISA_VERDE",
    0.0003
   ],
   [
-   "Pupilas",
-   "Olhos_Brancos",
+   "FIVELA_BRANCA",
+   "CINTO_PRETO",
+   0.0003
+  ],
+  [
+   "PUPILAS_PRETAS",
+   "OLHOS_BRANCOS",
    0.0002
   ],
   [
-   "Emblema_Capacete_Cruz",
-   "Emblema_Capacete_Circulo",
+   "CAPACETE_BRANCO",
+   "PROTETORES_ESTRUTURA_PRETA",
    0.0002
   ],
   [
-   "Capacete",
-   "Conchas_Abafadores",
+   "CAMISA_LOGO_BRANCA",
+   "CAMISA_VERDE",
    0.0002
   ],
   [
-   "Capacete",
-   "Cabelo",
+   "BRACOS_MAOS_PELE",
+   "CAPA_VERDE",
    0.0002
   ],
   [
-   "Capacete",
-   "Pele_Rosto",
+   "BRACOS_MAOS_PELE",
+   "CALCA_PRETA",
    0.0002
   ],
   [
-   "Fivela",
-   "Cinto",
-   0.0002
-  ],
-  [
-   "Armacao_Oculos",
-   "Almofadas_Abafadores",
+   "PUPILAS_PRETAS",
+   "ROSTO_PELE",
    0.0001
   ],
   [
-   "Sobrancelhas",
-   "Pele_Rosto",
-   0.0001
-  ],
-  [
-   "Dentes",
-   "Pele_Rosto",
-   0.0001
-  ],
-  [
-   "Almofadas_Abafadores",
-   "Cabelo",
-   0.0001
-  ],
-  [
-   "Pele_Bracos_Maos",
-   "Capa",
+   "FAIXAS_BRANCAS",
+   "BOTAS_PRETAS",
    0.0001
   ]
  ],
- "sobreposicao_total_mm3": 0.029,
- "volume_total_mm3": 375977.3,
+ "sobreposicao_total_mm3": 0.048,
+ "volume_total_mm3": 370800.1,
  "componentes_total": 65,
  "componentes_desconectados_da_base": [],
  "menor_area_contato_por_componente_mm2": [
   [
-   "Texto_CIPAA_Peito#1",
-   11.11
+   "CAPACETE_TEXTO_CIPAA#1",
+   10.87
   ],
   [
-   "Letreiro_DO_MES#5",
-   12.15
+   "CAMISA_TEXTO_CIPAA_BRANCO#1",
+   11.38
   ],
   [
-   "Texto_CIPAA_Capacete#1",
-   13.12
+   "BASE_TEXTO_DO_MES_VERDE#5",
+   12.1
   ],
   [
-   "Letreiro_DO_MES#0",
-   19.3
+   "BASE_TEXTO_DO_MES_VERDE#0",
+   19.22
   ],
   [
-   "Texto_CIPAA_Peito#2",
-   19.63
+   "CAPACETE_TEXTO_CIPAA#2",
+   19.78
   ],
   [
-   "Texto_CIPAA_Peito#0",
-   19.96
+   "CAMISA_TEXTO_CIPAA_BRANCO#2",
+   20.19
   ],
   [
-   "Sobrancelhas#0",
-   24.31
+   "CAMISA_TEXTO_CIPAA_BRANCO#0",
+   20.37
   ],
   [
-   "Texto_CIPAA_Peito#3",
-   24.39
+   "CAPACETE_TEXTO_CIPAA#3",
+   21.86
   ]
  ],
  "traco_CIPEIRO_mm(p5,mediana)": [
   2.27,
-  2.55
+  2.54
  ],
  "contraforma_CIPEIRO_mm(p5,min)": [
   1.47,
@@ -662,8 +689,8 @@
  "caixa_CIPEIRO_mm": [
   -16.96,
   35.14,
-  17.13,
-  27.94
+  17.12,
+  27.92
  ],
  "traco_DO_MES_mm(p5,mediana)": [
   1.25,
@@ -677,21 +704,21 @@
   -10.96,
   33.08,
   4.13,
-  15.46
+  15.45
  ],
  "traco_CIPAA_capacete_mm(p5,mediana)": [
-  0.61,
-  0.87
+  0.5,
+  0.8
  ],
  "contraforma_CIPAA_capacete_mm(p5,min)": [
   0.49,
-  0.44
+  0.41
  ],
  "caixa_CIPAA_capacete_mm": [
-  -11.82,
-  6.23,
-  183.01,
-  188.04
+  -9.86,
+  7.57,
+  183.22,
+  187.21
  ],
  "traco_CIPAA_peito_mm(p5,mediana)": [
   0.56,
@@ -706,5 +733,61 @@
   15.34,
   121.37,
   126.21
- ]
+ ],
+ "espessura_local_mm": {
+  "OCULOS_PRETOS": {
+   "p1": 0.42,
+   "p5": 1.01,
+   "mediana": 1.99,
+   "frac_abaixo_0_8mm": 0.0335
+  },
+  "SOBRANCELHAS_PRETAS": {
+   "p1": 0.25,
+   "p5": 0.48,
+   "mediana": 2.08,
+   "frac_abaixo_0_8mm": 0.1098
+  },
+  "CAPACETE_TEXTO_CIPAA": {
+   "p1": 0.16,
+   "p5": 0.33,
+   "mediana": 1.0,
+   "frac_abaixo_0_8mm": 0.3
+  },
+  "PROTETORES_HASTES_PRETAS": {
+   "p1": 0.82,
+   "p5": 1.84,
+   "mediana": 5.05,
+   "frac_abaixo_0_8mm": 0.0095
+  },
+  "CAMISA_TEXTO_CIPAA_BRANCO": {
+   "p1": 0.11,
+   "p5": 0.26,
+   "mediana": 0.88,
+   "frac_abaixo_0_8mm": 0.3965
+  },
+  "BRACOS_MAOS_PELE": {
+   "p1": 5.48,
+   "p5": 5.67,
+   "mediana": 11.13,
+   "frac_abaixo_0_8mm": 0.0
+  },
+  "CAPA_VERDE": {
+   "p1": 1.21,
+   "p5": 1.85,
+   "mediana": 2.12,
+   "frac_abaixo_0_8mm": 0.007
+  },
+  "FAIXAS_BRANCAS": {
+   "p1": 0.58,
+   "p5": 1.26,
+   "mediana": 1.63,
+   "frac_abaixo_0_8mm": 0.0203
+  },
+  "BASE_TEXTO_DO_MES_VERDE": {
+   "p1": 0.95,
+   "p5": 1.38,
+   "mediana": 1.39,
+   "frac_abaixo_0_8mm": 0.0085
+  }
+ }
 }

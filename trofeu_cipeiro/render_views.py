@@ -43,12 +43,12 @@ views = [
     ("02_perfil", 90, 0, 1, 0, 0),
     ("03_perspectiva", 28, 12, 1, 0, 0),
     ("04_costas", 180, 0, 1, 0, 0),
-    ("05_close_rosto", 0, 0, 4.0, fx, fz - 6),
+    ("05_close_rosto", 0, 0, 3.6, fx, fz - 4),
     ("06_close_capacete", 0, 8, 3.6, hx, hz + 2),
-    ("07_close_oculos", 0, 0, 7.0, fx, fz),
+    ("07_close_oculos", 0, 0, 6.0, fx, fz + 1.5),
     ("08_close_sinal_vitoria", 20, 0, 4.5, vx, vz),
-    ("09_close_camisa", 0, 0, 3.0, cx - 6, cz - 2),
-    ("10_close_base", 0, 10, 1.9, bx, bz),
+    ("09_close_camisa", 0, 0, 2.6, cx - 3, cz - 3),
+    ("10_close_base", 0, 10, 1.7, bx, bz - 4),
 ]
 spec = ";".join(f"{n}:{a}:{e}:{z}:{x:.2f}:{y:.2f}" for n, a, e, z, x, y in views)
 env = dict(os.environ, VIEWS=spec)
