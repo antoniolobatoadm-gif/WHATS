@@ -2,3 +2,4 @@ trofeu_cipeiro/node_modules/
 trofeu_cipeiro/package*.json
 trofeu_cipeiro/cur.glb
 __pycache__/
+*.blend1
