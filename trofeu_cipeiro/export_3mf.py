@@ -37,7 +37,7 @@ def normalize(parts):
     allv = np.vstack([p[2] for p in parts])
     zmin, zmax = allv[:, 2].min(), allv[:, 2].max()
     s = ALTURA / (zmax - zmin)
-    base = [p for p in parts if p[0] == "Base"][0][2]
+    base = [p for p in parts if p[0] == "BASE_PRETA"][0][2]
     cx = 0.5 * (base[:, 0].min() + base[:, 0].max())
     cy = 0.5 * (base[:, 1].min() + base[:, 1].max())
     for p in parts:
@@ -45,7 +45,7 @@ def normalize(parts):
         v[:, 0] = (v[:, 0] - cx) * s
         v[:, 1] = (v[:, 1] - cy) * s
         v[:, 2] = (v[:, 2] - zmin) * s
-        if p[0] == "Base":
+        if p[0] == "BASE_PRETA":
             v[v[:, 2] < 0.03, 2] = 0.0      # face de apoio exatamente plana em Z = 0
     return s
 
@@ -90,8 +90,8 @@ def write(parts, out):
               'xmlns:p="http://schemas.microsoft.com/3dmanufacturing/production/2015/06">\n'
               ' <metadata name="Title">KRYOU - Trofeu Cipeiro do Mes 200 mm (4 cores)</metadata>\n'
               ' <metadata name="Designer">KRYOU</metadata>\n'
-              ' <metadata name="Description">Trofeu unico, 4 filamentos PLA: 1 Verde Medio Masterprint ID31, '
-              '2 Preto Matte Black Soleyin ID42, 3 Branco GTMax3D ID02, 4 Nude GTMax3D ID01</metadata>\n'
+              ' <metadata name="Description">Trofeu unico, 4 filamentos PLA: T0/1 Verde Medio Masterprint ID31, '
+              'T1/2 Branco GTMax3D ID02, T2/3 Preto Matte Black Soleyin ID42, T3/4 Nude GTMax3D ID01</metadata>\n'
               ' <resources>\n  <basematerials id="1">\n')
     for k in sorted(model.MAT):
         nm, col = model.MAT[k]
@@ -100,7 +100,7 @@ def write(parts, out):
     for i, (name, mat, v, f) in enumerate(parts):
         mesh_xml(buf, i + 2, name, mat, v, f)
     asm = asm_id + 1
-    buf.write(f'  <object id="{asm}" name="KRYOU_Cipeiro_do_Mes" type="model" '
+    buf.write(f'  <object id="{asm}" name="PERSONAGEM_CIPEIRO" type="model" '
               f'p:UUID="{uuid.uuid5(uuid.NAMESPACE_URL, "kryou-cipeiro/asm")}">\n   <components>\n')
     for i in range(len(parts)):
         buf.write(f'    <component objectid="{i + 2}" transform="1 0 0 0 1 0 0 0 1 0 0 0"/>\n')
@@ -110,8 +110,8 @@ def write(parts, out):
 
     cfg = io.StringIO()
     cfg.write('<?xml version="1.0" encoding="UTF-8"?>\n<config>\n'
-              f'  <object id="{asm}">\n    <metadata key="name" value="KRYOU_Cipeiro_do_Mes"/>\n'
-              '    <metadata key="extruder" value="2"/>\n')
+              f'  <object id="{asm}">\n    <metadata key="name" value="PERSONAGEM_CIPEIRO"/>\n'
+              '    <metadata key="extruder" value="3"/>\n')
     for i, (name, mat, v, f) in enumerate(parts):
         cfg.write(f'    <part id="{i + 2}" subtype="normal_part">\n'
                   f'      <metadata key="name" value="{name}"/>\n'

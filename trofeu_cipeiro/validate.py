@@ -48,7 +48,7 @@ mn, mx = allv.min(0), allv.max(0)
 rep["bbox_min"] = mn.round(3).tolist()
 rep["bbox_max"] = mx.round(3).tolist()
 rep["dimensoes_XYZ_mm"] = (mx - mn).round(2).tolist()
-base = [p for p in parts if p[0] == "Base"][0]
+base = [p for p in parts if p[0] == "BASE_PRETA"][0]
 bv, bf = base[2], base[3]
 tb = trimesh.Trimesh(bv, bf, process=False)
 bottom = tb.faces[np.all(np.abs(tb.vertices[tb.faces][:, :, 2]) < 1e-6, axis=1)]
@@ -128,7 +128,7 @@ for (node, nj), a in contact.items():
 for node in nodes:
     adj[node.split("#")[0] + "*"].add(node)
     adj[node].add(node.split("#")[0] + "*")
-seen, st = set(), ["Base*"]
+seen, st = set(), ["BASE_PRETA*"]
 while st:
     x = st.pop()
     if x in seen:
@@ -152,6 +152,29 @@ for nm, T in (("CIPEIRO", model.TXT_CIPEIRO), ("DO_MES", model.TXT_DOMES),
     rep[f"contraforma_{nm}_mm(p5,min)"] = None if g is None else (round(g[0], 2), round(g[1], 2))
     rep[f"caixa_{nm}_mm"] = [round(x, 2) for x in T.ink_box]
 
+# ------------------------------------------------ 6. espessura local (raio para dentro a partir da superficie)
+# Para cada parte critica: amostra pontos na superficie, lanca um raio na direcao -normal e mede
+# a distancia ate a proxima face da mesma malha (= espessura local da parede/peca).
+crit = ["BRACOS_MAOS_PELE", "CAPA_VERDE", "OCULOS_PRETOS", "SOBRANCELHAS_PRETAS", "CAPACETE_TEXTO_CIPAA",
+        "CAMISA_TEXTO_CIPAA_BRANCO", "BASE_TEXTO_DO_MES_VERDE", "PROTETORES_HASTES_PRETAS", "FAIXAS_BRANCAS"]
+rng = np.random.default_rng(1)
+esp = {}
+for name, pid, v, f in parts:
+    if name not in crit:
+        continue
+    t = trimesh.Trimesh(v, f, process=False)
+    pts, fi = trimesh.sample.sample_surface(t, 4000, seed=1)
+    nrm = t.face_normals[fi]
+    org = pts - nrm * 1e-3
+    loc, ri, _ = t.ray.intersects_location(org, -nrm, multiple_hits=False)
+    th = np.full(len(pts), np.nan)
+    th[ri] = np.linalg.norm(loc - org[ri], axis=1)
+    th = th[np.isfinite(th)]
+    esp[name] = dict(p1=round(float(np.percentile(th, 1)), 2), p5=round(float(np.percentile(th, 5)), 2),
+                     mediana=round(float(np.median(th)), 2),
+                     frac_abaixo_0_8mm=round(float((th < 0.8).mean()), 4))
+rep["espessura_local_mm"] = esp
+
 json.dump(rep, open(f"{outdir}/validacao.json", "w"), indent=1, ensure_ascii=False)
 for k, vv in rep.items():
     if k != "integridade":
@@ -165,9 +188,9 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 cols = {int(pid): c for pid, _, c in mats}
-cuts = [("dedos_V", 180.0, None), ("oculos_olhos", 168.4, None), ("boca_dentes", 157.5, None),
-        ("CIPAA_capacete", 186.0, None), ("CIPAA_peito", 124.0, None), ("acento_MES", 16.4, None),
-        ("letreiro_DO_MES", 8.6, None), ("barra_capa", 64.0, None)]
+cuts = [("dedos_V", 180.0, None), ("oculos_olhos", 167.5, None), ("boca_dentes", 155.0, None),
+        ("CIPAA_capacete", 184.5, None), ("CIPAA_peito", 124.0, None), ("acento_MES", 16.4, None),
+        ("letreiro_DO_MES", 8.6, None), ("barra_capa", 58.0, None)]
 fig, axs = plt.subplots(2, 4, figsize=(20, 10))
 for ax, (lbl, z, _) in zip(axs.ravel(), cuts):
     for name, pid, v, f in parts:
